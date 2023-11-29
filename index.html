@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events Calendar</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+
+    header {
+      color: #010c08;
+      text-align: center;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between; /* Align items at the ends of the flex container */
+      align-items: center;
+    }
+
+    header img {
+      max-height: 100px; 
+    }
+
+    nav {
+      color: #ffffff;
+      padding: 0.5em;
+      text-align: center;
+      position: relative;
+      height: 10px;
+    }
+
+    nav a {
+      color: #0a0a0a;
+      text-decoration: rgb(24, 23, 23);
+      padding: 1em;
+      margin: 0 0.5em;
+      cursor: pointer;
+      padding-right: 120px;
+      text-decoration-color: aqua;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    nav a:hover{
+        background-color: #ce2a2a;
+        border-radius: 50px;
+        transform: scale(1.1);
+    }
+    .event:hover,
+    .cricket:hover,
+    .football:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: rgba(240, 240, 240, 0.6);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: grid;
+      transition: transform 0.3s ease;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .day {
+      padding: 1em;
+      background-color: #eee;
+    }
+
+    .event {
+  margin: 1em 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value as needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: antiquewhite;
+  text-align: center;
+  cursor: pointer;
+}
+
+    .cricket {
+  margin: 1em 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: antiquewhite;
+  cursor: pointer; /* Adjust text color for cricket event */
+}
+
+    .football {
+  color: antiquewhite; 
+  text-align: center;
+  margin: 1em 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-bottom: 100px;
+  cursor: pointer;
+  background-repeat: no-repeat;/* Adjust text color for football event */
+}
+
+
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('https://conferences.lpu.in/isswm/imgs/4.jpg');">
+  <header>
+    <h1>Campus Events And Activities Calendar</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png" alt=""> <!-- Replace "your-logo.png" with the path to your logo image -->
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="https://gurfiyaz.github.io/Campus-Events-and-Academic-Calenders/">Calendar</a>
+    <a href="https://gurfiyaz.github.io/Campus-Events-and-Academic-Calenders2.1/">Events</a>
+    <a href="https://gurfiyaz.github.io/Campus-Events-and-Academic-Calenders1/">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    
+    <div class="event" style="background-image: url('https://www.lpu.in/campus_life/images/campus-events/independence-day-2023.jpg'); padding-top: 80px;">
+        <h3>Independence Day</h3>
+        <p>Time: Will be notified</p>
+        <p>Venue: Yet to decide</p>
+
+      </div><br>
+    <div class="cricket" style="background-image: url('https://www.lpu.in/campus_life/images/campus-events/youthvibe-2023.jpg'); padding-top: 60px;">
+      <h3>YouthVibe</h3>
+      <p>Date: 11/12/2024</p>
+      <p>Time: Will be notified</p>
+      <p>Venue: Yet to decide</p>
+    </div><br>
+    <div class="football" style="background-image: url('https://images.cnbctv18.com/wp-content/uploads/2022/09/Hindi-Diwas-1-350x196.jpg?im=FitAndFill,width=1200,height=900'); ">
+      <h3>Hindi Diwas</h3>
+      <p>Date: 14/1/2024</p>
+      <p>Time: Will be notified</p>
+      <p>Venue: Yet to decide</p>
+    </div>
+    <div class="event" style="background-image: url('https://www.lpu.in/campus_life/images/campus-events/fashion-show.jpg'); padding-top: 120px;">
+      <h3>Fasionstats</h3>
+      <p>Date: 26/1/2024</p>
+      <p>Time: Will be notified</p>
+      <p>Venue: Yet to decide</p>
+    </div><br>
+  <div class="cricket" style="background-image: url('https://www.lpu.in/campus_life/images/campus-events/international-yoga-day-2022.jpg'); padding-top: 60px;">
+    <h3>Internatioal Yoga Day</h3>
+    <p>Date: 10/4/2024</p>
+    <p>Time: Will be notified</p>
+    <p>Venue: Yet to decide</p>
+  </div><br>
+  <div class="football" style="background-image: url('https://www.lpu.in/campus_life/images/campus-events/kho-kho-championship-2021-22.jpg'); padding-top: 120px; background-size: cover;">
+    <h3>KHO KHO Competition</h3>
+    <p>Date: 23/1/2024</p>
+    <p>Time: Will be notified</p>
+    <p>Venue: Yet to decide</p>
+  </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Campus Events Calendar</p>
+  </footer>
+</body>
+
+</html>
